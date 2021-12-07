@@ -314,6 +314,7 @@ const app = {
         this.currentIndex = newIndex
         this.loadCurrentSong()
         this.setActiveSong(this.currentIndex)
+        this.scrollToActiveSong()
         this.indexTemp.push(this.currentIndex)
         if (this.indexTemp.length >= this.songs.length) {
             this.indexTemp = [this.currentIndex]
